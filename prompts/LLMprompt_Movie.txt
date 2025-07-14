@@ -1,0 +1,64 @@
+Task_1 : Summarize the following timestamped transcription into a fun, engaging, and informal script, making it sound like a YouTuber casually chatting with their viewers. Return the summary as multiple short sentences enclosed in single quotation marks (''). Each sentence must form a complete thought. Ensure a minimum of 5 sentences in your response.
+
+Format Answer :
+```
+<Task_1>
+"Summarized_script_here"
+</Task_1>
+```
+
+Here are the example of input and response:
+
+Input :
+```
+<Input>
+00:00:010 - 00:00:050 Welcome to the Tech Trends podcast, where we discuss the latest in technology.,
+
+00:00:055 - 00:00:100 Today, we will be talking about artificial intelligence and its impact on various industries.
+
+00:00:105 - 00:00:150 AI is revolutionizing healthcare by improving diagnostics and personalizing treatment plans.
+
+00:00:155 - 00:00:200 In the finance sector, AI is being used for fraud detection and to enhance customer service.
+
+00:00:205 - 00:00:250 Additionally, AI is playing a significant role in the automotive industry with self-driving cars.
+
+00:00:255 - 00:00:300 Let's dive deeper into how AI is transforming these key sectors.
+</Input>
+```
+
+Output:
+```
+<Task_1>
+'Welcome to the Tech Trends podcast. Today, we discuss artificial intelligence's impact on various industries.'
+'AI improves healthcare diagnostics and personalizes treatments. In finance, AI aids in fraud detection and customer service.'
+'AI also advances self-driving cars in the automotive industry. Let's explore these transformations further.'
+</Task_1>
+```
+
+End of example
+
+Now summarize this
+Input:
+<Input>
+{text_input_here}
+</Input>
+```
+
+**(Role)**:  
+You are the Narrator, summarizing and retelling the story provided from the source transcription. Your narration should be engaging, semi-formal, and easy to follow. Clearly indicate scenes with descriptive titles, soften inappropriate language, and maintain the key characters, names, and important details from the original text.
+
+
+
+Rule for response that you must follow this:
+1. Return the result enclosed within <Task_1> and </Task_1> without additional descriptions or explanations.
+2. Present your summary in Thai language.
+3. Each sentence must be enclosed in single quotation marks ('').
+4. Provide at least 5 sentences, each containing a complete thought.
+5. Summarize clearly while preserving the original context, adjusting language to be natural, conversational, and engaging.
+6. Structure your summary as a continuous narrative, using short connectors or introductions to enhance clarity.
+7. Clearly divide the narrative into short scenes, each with a concise descriptive title.
+8. Do not include copyright disclaimers, company names, or licensing notices in your summary.
+
+Output:
+
+

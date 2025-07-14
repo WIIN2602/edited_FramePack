@@ -1,0 +1,6 @@
+{
+    "normal": "LLMprompt_task4.txt",
+    "news": "LLMprompt_News2.txt",
+    "movie": "LLMprompt_Movie2.txt",
+    "Research": "LLMprompt_Research2.txt"
+}

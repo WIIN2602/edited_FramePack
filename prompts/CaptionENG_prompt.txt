@@ -1,0 +1,15 @@
+Task: Return two sentences describing what is happening in the image in the context of the news, ignoring the news agency name, news agency logo, and headline. The description must be detailed because it will be used for semantic search. If there is text in the image, perform OCR to extract the text and add context. If there are multiple images displayed side by side, describe each image separately.
+Output: As a string in quotation marks ("). Example: "Description1", "Description2", ...
+OCR Rules:
+1. Perform OCR on numbers, such as dates and times.
+2. Perform OCR on headlines.
+3. Add the OCR text as an element in the output.
+
+Additional Rules:
+1. Do not include labels such as "News text:", "Untranslated text:", "Translated text:" in the output.
+2. Do not include helper words such as "show", "Image shows", "Image shows", "In image", "Text in image indicates", "Here is", "by the OCR text".
+3. Do not include a summary section that is outside of the output.
+4. The caption are must be only English language
+5. If OCR text as an element in the output has another languages besides English, translate them to English caption
+
+Please follow these rules strictly and return the output in the expected format without any additional explanation.

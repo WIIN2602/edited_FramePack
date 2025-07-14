@@ -1,0 +1,22 @@
+Task: Given chunks with uid, caption, and duration of each chunk, and a news script with audio duration, select the chunks that match the news script. Use the related caption of chunks to match with the news script. However, the combined video duration of the selected chunks must be as close as possible to the audio duration from the news script.
+
+Rules:
+1. The combined duration of the selected chunks must be as close as possible to the audio duration, without exceeding it by more than 4 seconds.
+2. If the total duration exceeds the audio duration by more than 4 seconds, remove chunks or adjust the selection to ensure the duration is within this limit.
+3. The order of the selected chunks must be related to the order in the news script.
+4. The expected output is a list containing the uid of the scenes that result from matching.
+    
+Example Input:
+```
+{'uid': '959e445e-2b73-4702-b9d1-3de841aa3465', 'caption': 'น้ำท่วมขังในพื้นที่ชุมชน ทำให้ถนนและอาคารต่างๆ ถูกน้ำท่วม, 16:37:10, ข่าวเย็นประเด็นร้อน', 'duration': 4.4400}
+and more chunks
+
+news script: ['ในอาทิตก่อนมีชายคนหนึ่งได้บุกเข้าไปในธนาคาร เเละผ้าเช็ดเท้า', 'ตำรวจได้สืบสวนโดยใช้กล้องวงจรปิด ที่เสียหน้าธนาคาร เเละได้รู้ตัวคนร้ายว่าเป็น คนจากต่างจังหวัด จึงได้ตามไปสอบสวนเพิ่มเติม audio duration: 20.000 seconds']
+```
+
+Example Output:
+```
+[['243d10cc-c7f4-425f-8d9c-5b433f9fb4b7', 'c44d7e58-3724-4893-9996-cc7b23d3988e', ... ]]
+```
+
+Please follow these rules strictly and return the output in the expected format without any additional explanation.

@@ -1,0 +1,56 @@
+Task_1 : Summarize the following timestamped transcription into a concise script, ensuring that each chunk captures different key points.also
+Return the summary as a text line in Thai language.
+
+Format Answer :
+```
+<Task_1>
+"Summarize_script_here"
+</Task_1>
+
+```
+Here are the example of input and response:
+Input :
+```
+<Input>
+00:00:010 - 00:00:050 Welcome to the Tech Trends podcast, where we discuss the latest in technology.,
+
+00:00:055 - 00:00:100 Today, we will be talking about artificial intelligence and its impact on various industries.
+
+00:00:105 - 00:00:150 AI is revolutionizing healthcare by improving diagnostics and personalizing treatment plans.
+
+00:00:155 - 00:00:200 In the finance sector, AI is being used for fraud detection and to enhance customer service.
+
+00:00:205 - 00:00:250 Additionally, AI is playing a significant role in the automotive industry with self-driving cars.
+
+00:00:255 - 00:00:300 Let's dive deeper into how AI is transforming these key sectors.
+</Input>
+```
+Output:
+```
+<Task_1>
+'Welcome to the Tech Trends podcast. Today, we discuss artificial intelligence's impact on various industries.'
+'AI improves healthcare diagnostics and personalizes treatments. In finance, AI aids in fraud detection and customer service.'
+'AI also advances self-driving cars in the automotive industry. Let's explore these transformations further.'
+</Task_1>
+```
+End of example
+
+Now summarize this
+Input:
+<Input>
+{text_input_here}
+</Input>
+```
+
+** (Role)**: 
+You are  a live reporter on a Social Media Live broadcast reporting the event [Event Name].
+Experts are debating the topic [Debated Topic]. 
+Present clear evidence (such as photographs, videos, or documents) to support the facts. Provide a concise and impartial summary of the key points. Convey to the audience the significance and impact of this event quickly.
+
+
+Rule for response that you must follow this:
+1. Return the result without any description
+2. Follow the word captioning rule
+3. Return a minimum of 5 lines of text
+4. Ensure that connecting words (e.g., 'and', 'but', 'therefore') are incorporated throughout the script to provide smooth transitions and coherent flow between ideas..
+Output:
