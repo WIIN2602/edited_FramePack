@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from controller.video_controller import videoStream
 from controller.audio_controller import audioStream
-from controller.background_controller import backgroundStream
 from controller.framepack_controller import FramePackStream
 app = FastAPI()
 
@@ -20,5 +19,4 @@ app.add_middleware(
 
 app.include_router(videoStream)
 app.include_router(audioStream)
-app.include_router(backgroundStream)
 app.include_router(FramePackStream)
