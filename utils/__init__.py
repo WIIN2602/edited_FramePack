@@ -6,4 +6,4 @@ __all__ = ['GPT_TOKEN', 'LLM_MODEL', 'LLM_KEY',
            'TRANSCRIBE2_URL',
            
            'SERVICE_DIR', 'VID_SRC_DIR', 'VID_SCN_DIR',
-           'VID_SUM_DIR', 'CACHE_DIR', 'SCRIPT_DIR', 'VOICE_DIR']
+           'VID_SUM_DIR', 'CACHE_DIR', 'SCRIPT_DIR', 'VOICE_DIR','IMAGE_DIR']

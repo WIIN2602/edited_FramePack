@@ -25,6 +25,7 @@ VID_SUM_DIR = os.getenv("VID_SUM_DIR")
 CACHE_DIR = os.getenv("CACHE_DIR")
 SCRIPT_DIR = os.getenv("SCRIPT_DIR")
 VOICE_DIR = os.getenv("VOICE_DIR")
+IMAGE_DIR = os.getenv("IMAGE_DIR")
 
 # Create Directories
 if not os.path.exists(SERVICE_DIR):
@@ -41,3 +42,5 @@ if not os.path.exists(os.path.join(SERVICE_DIR, SCRIPT_DIR)):
     os.makedirs(os.path.join(SERVICE_DIR, SCRIPT_DIR), exist_ok=True)
 if not os.path.exists(os.path.join(SERVICE_DIR, VOICE_DIR)):
     os.makedirs(os.path.join(SERVICE_DIR, VOICE_DIR), exist_ok=True)
+if not os.path.exists(os.path.join(SERVICE_DIR, IMAGE_DIR)):
+    os.makedirs(os.path.join(SERVICE_DIR, IMAGE_DIR), exist_ok=True)
